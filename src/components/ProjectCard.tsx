@@ -1,4 +1,4 @@
-import { ExternalLink, Github } from "lucide-react";
+import { ExternalLink, Github, PlayCircle } from "lucide-react";
 import { Button } from "./ui/button";
 
 interface ProjectCardProps {
@@ -8,9 +8,10 @@ interface ProjectCardProps {
   techStack: string[];
   liveUrl?: string;
   githubUrl?: string;
+  demoUrl?: string;
 }
 
-const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl }: ProjectCardProps) => {
+const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl, demoUrl }: ProjectCardProps) => {
   return (
     <div className="glass-card rounded-xl overflow-hidden group hover:scale-[1.02] transition-all duration-300">
       <div className="relative overflow-hidden">
@@ -38,7 +39,7 @@ const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl 
           </p>
         </div>
         
-        <div className="flex items-center gap-4 pt-4">
+        <div className="flex flex-wrap items-center gap-3 pt-4">
           {githubUrl && (
             <Button
               variant="outline"
@@ -49,6 +50,19 @@ const ProjectCard = ({ title, description, image, techStack, liveUrl, githubUrl 
               <a href={githubUrl} target="_blank" rel="noopener noreferrer">
                 <Github size={16} className="mr-2" />
                 GitHub
+              </a>
+            </Button>
+          )}
+          {demoUrl && (
+            <Button
+              variant="outline"
+              size="sm"
+              className="glass-card border-primary/50 hover:bg-primary hover:text-primary-foreground"
+              asChild
+            >
+              <a href={demoUrl} target="_blank" rel="noopener noreferrer">
+                <PlayCircle size={16} className="mr-2" />
+                Watch Demo
               </a>
             </Button>
           )}

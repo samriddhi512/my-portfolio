@@ -3,11 +3,20 @@ import ProjectCard from "@/components/ProjectCard";
 const Projects = () => {
   const projects = [
     {
+      title: "Welth - AI Finance Platform",
+      description: "A full-stack AI-powered personal finance platform built with Next.js 15 and React 19. Features Clerk authentication, multi-account budget tracking, recurring transactions, AI receipt scanning with Google Gemini, automated email reports via Inngest + Resend, interactive analytics with Recharts, and Arcjet-based bot/abuse protection.",
+      image: "https://images.unsplash.com/photo-1554224155-6726b3ff858f?w=800&q=80",
+      techStack: ["Next.js 15", "React 19", "Prisma", "Clerk", "Google Gemini AI", "Inngest", "Tailwind CSS"],
+      githubUrl: "https://github.com/samriddhi512/welth",
+      demoUrl: "https://drive.google.com/file/d/1PI7Avs9p-gABA29X6_vJbx60cHoM5lzd/view",
+    },
+    {
       title: "Natours - Tour Booking App",
       description: "Built a full-stack tour booking platform with JWT authentication, role-based access control, interactive maps, and real-time booking system. Implemented comprehensive security measures including rate limiting, input validation, and RESTful API design.",
       image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80",
       techStack: ["JavaScript", "Node.js", "Express.js", "MongoDB"],
       githubUrl: "https://github.com/samriddhi512/natours-tour-booking",
+      demoUrl: "https://drive.google.com/file/d/1ttpg9dLC29cGcnXl--E-7YC4BpN3x7RU/view",
     },
     {
       title: "Tic-Tac-Toe Multiplayer",
@@ -15,6 +24,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1611371805429-8b5c1b2c34ba?w=800&q=80",
       techStack: ["Node.js", "WebSockets", "JavaScript", "HTML5", "CSS3"],
       githubUrl: "https://github.com/samriddhi512/Tic-tac-toe-multiplayer",
+      demoUrl: "https://drive.google.com/file/d/1FAGDnoutqkZvj5gkreS75x7XP8E6oOZk/view",
     },
     {
       title: "WorldWise Travel App",
@@ -22,6 +32,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1488646953014-85cb44e25828?w=800&q=80",
       techStack: ["React", "React Router", "Leaflet", "Context API", "CSS Modules"],
       githubUrl: "https://github.com/samriddhi512/world-wise-app",
+      demoUrl: "https://drive.google.com/file/d/1z5w8Tn7-M-YO0z3JqA1yxO0-bRrfU95O/view",
     },
     {
       title: "Todo API - Task Management Backend",
@@ -43,6 +54,7 @@ const Projects = () => {
       image: "https://images.unsplash.com/photo-1513104890138-7c749659a591?w=800&q=80",
       techStack: ["React", "JavaScript", "React Router", "Redux"],
       githubUrl: "https://github.com/samriddhi512/fast-react-pizza",
+      demoUrl: "https://drive.google.com/file/d/1oo-bcCLDVRkTGdntFAO1yxIsyXgLaB6C/view",
     },
   ];
 
